@@ -1,6 +1,7 @@
 .idea/
-.allure-results/
-.node-modules/
-.logs/
+allure-results/
+node_modules/
+errorShots/
+logs/
 *.log
 
