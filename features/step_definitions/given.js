@@ -1,4 +1,4 @@
-const { Given } = require('cucumber')
+const { Given } = require('cucumber');
 const LoginPage = require('../../page_objects/login_page');
 
 

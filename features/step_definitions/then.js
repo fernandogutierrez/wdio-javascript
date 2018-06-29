@@ -1,18 +1,14 @@
 const { Then } = require('cucumber');
+const PanelNavigation = require('../../page_objects/panel_navigation');
+const PoliciesPage = require('../../page_objects/policies_page');
 
 Then('I am able to see home page of site', function () {
 
 });
 
 Then('I am not able to see {string} listed inside Policies page', function (policy) {
-    let dashboard_nav_btn = "//h2[text()='Monitor']/parent::div/descendant::div[contains(@class,'d-lg-block')]/" +
-                            "span[text()='Dashboard']";
-    browser.click(dashboard_nav_btn);
-
-    let policies_nav_btn = "//h2[text()='Manage']/following-sibling::div/div[contains(@class,'d-lg-block')]/span[text()='Policies']";
-    browser.click(policies_nav_btn);
-
-    browser.waitForVisible("//input[@placeholder='Search Policies']", 10 * 1000);
-    browser.setValue("//input[@placeholder='Search Policies']", policy);
-    expect(`//div[contains(text(),' ${policy} ')]`).to.not.be.visible();
+    PanelNavigation.go_to_dashboard();
+    PanelNavigation.go_to_policies();
+    PoliciesPage.search_policy(policy);
+    expect(PoliciesPage.get_policy_element(policy).isVisible()).to.not.be.true;
 });
