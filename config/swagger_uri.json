@@ -1,10 +1,11 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true
+  "policies": {
+    "policy_creation": "/{siteUuid}/policies/type/{os}"
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "site": {
+    "site_details": "/register/site/{siteName}/details"
+  },
+  "authentication": {
+    "token": "/{siteUuid}/token"
+  }
 }
