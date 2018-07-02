@@ -1,5 +1,5 @@
 {
-  "default_site_index": 0,
+  "default_site_index": 2,
   "sites": [
     {
       "site": "botnet01",
@@ -15,6 +15,14 @@
       "credentials": {
         "email": "zachary.scolaro@vipre.com",
         "password": "password"
+      }
+    },
+    {
+      "site": "001",
+      "server": "vcqa.threattrack.net",
+      "credentials": {
+        "email": "Zachary.scolaro@vipre.com",
+        "password": "carboatplanehouse"
       }
     }
   ]
