@@ -10,6 +10,7 @@
   "author": "fernando",
   "license": "ISC",
   "devDependencies": {
+    "axios": "^0.18.0",
     "chai": "^4.1.2",
     "chai-webdriverio": "^0.4.3",
     "chromedriver": "^2.40.0",
