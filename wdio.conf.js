@@ -1,7 +1,3 @@
-
-// var fp = require('./features/support/helper/firefox_settings')
-// var fs = require('fs');
-
 exports.config = {
     
     //
@@ -135,7 +131,8 @@ exports.config = {
     cucumberOpts: {
         require: ['./features/step_definitions/given.js',
                   './features/step_definitions/when.js',
-                  './features/step_definitions/then.js'],        // <string[]> (file/dir) require files before executing features
+                  './features/step_definitions/then.js',
+                  './features/step_definitions/hooks/policies.js'],        // <string[]> (file/dir) require files before executing features
         backtrace: false,   // <boolean> show full backtrace for errors
         compiler: [],       // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
         dryRun: false,      // <boolean> invoke formatters without executing steps
