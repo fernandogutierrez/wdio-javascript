@@ -10,7 +10,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './features/**/*.feature'
+        './src/features/**/*.feature'
     ],
     // Patterns to exclude.
     exclude: [
@@ -32,7 +32,7 @@ exports.config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 10,
+    maxInstances: 1,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -42,7 +42,7 @@ exports.config = {
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        maxInstances: 5,
+        maxInstances: 1,
         //
         browserName: 'firefox'
         // ,firefox_profile: new Buffer(fs.readFileSync('C:\\wdio-cucumber-training\\firefox-profiles\\profile.zip')).toString('base64')
@@ -129,10 +129,10 @@ exports.config = {
     //
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
-        require: ['./features/step_definitions/given.js',
-                  './features/step_definitions/when.js',
-                  './features/step_definitions/then.js',
-                  './features/step_definitions/hooks/policies.js'],        // <string[]> (file/dir) require files before executing features
+        require: ['./src/step_definitions/ui/given.js',
+                  './src/step_definitions/ui/then.js',
+                  './src/step_definitions/ui/when.js',
+                  './src/step_definitions/ui/hooks/policies.js'],        // <string[]> (file/dir) require files before executing features
         backtrace: false,   // <boolean> show full backtrace for errors
         compiler: [],       // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
         dryRun: false,      // <boolean> invoke formatters without executing steps

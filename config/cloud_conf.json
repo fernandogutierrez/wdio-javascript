@@ -1,5 +1,5 @@
 {
-  "default_site_index": 2,
+  "default_site_index": 0,
   "sites": [
     {
       "site": "botnet01",

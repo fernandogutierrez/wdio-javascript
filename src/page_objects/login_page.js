@@ -1,4 +1,4 @@
-const cloud_conf = require('../config/cloud_conf.json');
+const cloud_conf = require('../../config/cloud_conf.json');
 
 class LoginPage {
 
