@@ -1,3 +1,7 @@
+const VCloudUIProductFactory = require('./src/support/action/public/vcloud_ui_product_factory');
+const chai = require('chai');
+const chaiWebdriver = require('chai-webdriverio').default;
+
 exports.config = {
     
     //
@@ -179,10 +183,11 @@ exports.config = {
      * @param {Array.<String>} specs List of spec file paths that are to be run
      */
     before: function (capabilities, specs) {
-        let chai = require('chai');
-        let chaiWebdriver = require('chai-webdriverio').default;
         chai.use(chaiWebdriver(browser));
         global.expect = chai.expect;
+
+        let vcloud_ui_product_factory = new VCloudUIProductFactory;
+        global.vcloud_ui = vcloud_ui_product_factory.make()
     }
     // ,
     /**
