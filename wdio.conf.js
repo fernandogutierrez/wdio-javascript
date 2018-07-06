@@ -1,4 +1,4 @@
-const VCloudUIProductFactory = require('./src/support/action/public/vcloud_ui_product_factory');
+const VCloudUIProductFactory = require('./src/support/action/model/vcloud_ui_product_factory');
 const chai = require('chai');
 const chaiWebdriver = require('chai-webdriverio').default;
 
