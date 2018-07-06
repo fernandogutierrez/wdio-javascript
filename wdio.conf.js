@@ -186,8 +186,7 @@ exports.config = {
         chai.use(chaiWebdriver(browser));
         global.expect = chai.expect;
 
-        let vcloud_ui_product_factory = new VCloudUIProductFactory;
-        global.vcloud_ui = vcloud_ui_product_factory.make()
+        global.vcloud_ui = VCloudUIProductFactory.make();
     }
     // ,
     /**

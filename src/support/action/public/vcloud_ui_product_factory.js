@@ -16,7 +16,7 @@ const def_site = cloud_conf.sites[cloud_conf.default_site_index];
 
 class VcloudUiProductFactory{
 
-    make(){
+    static make(){
         let site = new Site(def_site.protocol, def_site.site, def_site.server);
         let user = new User(def_site.credentials.email, def_site.credentials.password);
         let login_actions = new LoginActions(new LoginPage(), site, user);
