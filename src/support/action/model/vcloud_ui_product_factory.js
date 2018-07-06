@@ -9,7 +9,7 @@ const LoginActions = require('../login_actions');
 const PanelNavActions = require('../panel_nav_actions');
 const PolicyActions = require('../policy_actions');
 const DeletPolDialogActions = require('../delete_policy_dialog_actions');
-const cloud_conf = require('../../../../config/cloud_conf.json');
+const cloud_conf = require('../../../../../config/cloud_conf.json');
 
 class VCloudUIProductFactory{
 
