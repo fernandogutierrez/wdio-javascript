@@ -133,10 +133,10 @@ exports.config = {
     //
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
-        require: ['./src/support/step_definitions/ui/given.js',
-                  './src/support/step_definitions/ui/then.js',
-                  './src/support/step_definitions/ui/when.js',
-                  './src/support/step_definitions/ui/hooks/policies.js'],        // <string[]> (file/dir) require files before executing features
+        require: ['./src/support/step_definitions/ui_actions/given.js',
+                  './src/support/step_definitions/ui_actions/then.js',
+                  './src/support/step_definitions/ui_actions/when.js',
+                  './src/support/step_definitions/ui_actions/hooks/policies.js'],        // <string[]> (file/dir) require files before executing features
         backtrace: false,   // <boolean> show full backtrace for errors
         compiler: [],       // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
         dryRun: false,      // <boolean> invoke formatters without executing steps

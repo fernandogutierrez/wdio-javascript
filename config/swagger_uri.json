@@ -1,11 +1,11 @@
 {
-  "policies": {
+  "policy": {
     "policy_creation": "/{siteUuid}/policies/type/{os}"
   },
   "site": {
     "site_details": "/register/site/{siteName}/details"
   },
   "authentication": {
-    "token": "/{siteUuid}/token"
+    "token": "/policy_creation/{siteUuid}/token"
   }
 }

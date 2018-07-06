@@ -1,15 +1,15 @@
 const Site = require('./site');
 const User = require('./user');
 const VCloudUIProduct = require('./vcloud_ui_product');
-const LoginPage = require('../pages/login_page');
-const PolicyPage = require('../pages/policies_page');
-const PanelNav = require('../pages/panel_navigation');
-const DeletPolDialog = require('../pages/delete_policy_dialog');
-const LoginActions = require('../login_actions');
-const PanelNavActions = require('../panel_nav_actions');
-const PolicyActions = require('../policy_actions');
-const DeletPolDialogActions = require('../delete_policy_dialog_actions');
-const cloud_conf = require('../../../../../config/cloud_conf.json');
+const LoginPage = require('../ui_actions/pages/login_page');
+const PolicyPage = require('../ui_actions/pages/policies_page');
+const PanelNav = require('../ui_actions/pages/panel_navigation');
+const DeletPolDialog = require('../ui_actions/pages/delete_policy_dialog');
+const LoginActions = require('../ui_actions/login_actions');
+const PanelNavActions = require('../ui_actions/panel_nav_actions');
+const PolicyActions = require('../ui_actions/policy_actions');
+const DeletPolDialogActions = require('../ui_actions/delete_policy_dialog_actions');
+const cloud_conf = require('../../../../config/cloud_conf.json');
 
 class VCloudUIProductFactory{
 

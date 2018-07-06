@@ -13,7 +13,7 @@ class LoginPageActions {
     }
 
     open(site=this._site) {
-        browser.url(site.full_url);
+        browser.url(site.base_ui_url);
     }
 
 }
